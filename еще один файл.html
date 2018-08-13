@@ -1,34 +1,25 @@
-<DOCTYPE HTML>
-    <head>
-    <title> Lending </title>
+<!DOCTYPE HTML>
+<html>
+  <head>
+   <title> О лососи! </title>
     <style>
-    .header{
-        padding: 10px;
-        position: fixed;
-        left: 0px;
-        top: 0px;
-        right: 0px;
-        z-index: 997;
-        background:rgba(170, 6, 6, 0.9);
-        }
+      #train {
+        position: relative;
+        cursor: pointer;
+      }
     </style>
-    </head>
-    <body>
-     <header class="header">
-    <div class="container">
-        <div class="menu">
-            <div class="menu-logo"></div>
-            <a href="#" class="menu-logo_link"> <img src="picture/p1.png"> </a>
-            </div>
-            <div class="menu-nav-container"></div>
-            <div class="container">
-                <ul class="menu-nav">
-                    <li class="menu-nav_item"> <a href="#"> home </a> </li>
-                    <li class="menu-nav_item"> <a href="#"> about </a> </li>
-                    </ul>
-                    </div>
-            </div>
-            </div>
-            </header>
-    </body>
-    </html>
+  </head>
+  <body>
+   <img id ="train" src="https://js.cx/clipart/train.gif">
+   <script>
+     train.onclick = function() {
+       var start = Date.now();
+       var timer = setInterval(function() {
+         var timePassed = Date.now() - start;
+         train.style.left = timePasseed*2 + 'px';
+         if (timePassed > 2000) clearInterval(timer);
+         }, 20);
+     }
+   </script>
+  </body>
+</html>
