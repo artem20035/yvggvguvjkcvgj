@@ -1,0 +1,21 @@
+<html>                                                                  
+<head>                                                                
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $("h1").mouseover(function(){ $("h1").css("color", "red")});
+        $("h1").mouseout(function(){ $("h1").css("color", "black")});
+        $("#but2").dblclick(function(){ alert("Вы нажали два раза")});
+        $("p").click(function(){ $("p").fadeOut(500) });
+        $("but1").click(function(){ $("p").slideToggle(1000)});
+    });
+
+</script>
+<body>
+    <h1 id="h"> Наведи на меня </h1>
+    <br>
+    <p> KJgfgffffnjofklgvnsfgfsjovfskvsfjvfsjvfjvfklvlfvjklsfvjfsvksfnvsfjkvjfskvfjljsvjfsklvfsjvfslkvjsfvkfsvlsfvsflkvflkfvflvslkvjlsfvsfvsfv</p>
+    <input type="button" value="Нажми один раз" id="but1"><br>
+    <input type="button" value="Нажми два раза" id="but2">
+    </html>
